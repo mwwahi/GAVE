@@ -42,6 +42,7 @@ def create_dataloaders(
         dataset_test, batch_size=1, sampler=test_sampler, num_workers=2,
         drop_last=False, pin_memory=True
     )
+    # test_loader = None
 
     return train_loader, test_loader
 
@@ -108,7 +109,8 @@ def train_sets(sets):
 
     set_ = sets 
     train_imgs = set_['training']
-    val_imgs = set_['validation']
+    # val_imgs = set_['validation']
+    val_imgs = set_['training']
 
     generator_pth = config.model
     if config.model in ['RRWNet', 'RRWNetAll', 'RRUNet']:

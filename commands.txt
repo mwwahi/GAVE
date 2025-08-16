@@ -1,0 +1,5 @@
+python /cvib2/apps/personal/wasil/lib/GAVE/Code/Tool/preprocess.py --i /cvib2/apps/personal/wasil/lib/GAVE/Data/GAVE/training/images --m /cvib2/apps/personal/wasil/lib/GAVE/Data/GAVE/training/masks --s /cvib2/apps/personal/wasil/lib/GAVE/Data/GAVE/training/images_enhanced
+
+
+cd /cvib2/apps/personal/wasil/lib/GAVE/Code
+python train.py --dataset GAVE --model GAVENet --version trainv0 --gpu_id 1
